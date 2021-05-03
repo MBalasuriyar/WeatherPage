@@ -1,15 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
 
-
-
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     
-</body>
-</html>
+    
+    
+    </head>
+    
+        
+    
+      <body>
+        
+        <div class="container-fluid">
+                    <div class="jumbotron jumbotron-fluid bg-dark  text-center">
+                <div class="container">
+                    <h1 class="display-3">Weather</h1>
+                </div>
+            </div>
+            <div class="container">
+                <h4>Please enter your city of interest;</h4>
+                <div class="row">
+                    <div class="col">
+                        <!-- Weather search cards -->
+                        <div class="card-body text-center">
+                            <div class="card" style="width: 30rem;">
+                                <div class="card-body bg-dark">
+                                    <h6 class="card-subtitle mb-3 city ">City</h6>
+                                    <div class="input-group mb-2">
+    
+                                        <!-- Search field -->
+                                        <input type="text" class="form-control searchInput" placeholder="Enter location">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary bg-primary searchBtn" type="button"
+                                                id="button-addon2">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5-Day forecast-->
+                    <div class="col-12 text-center">
+                        <div class="card weatherEl pl-4 bg-dark text-primary justify-content-center">
+                            <h5 class="card-title mt-2 mr-5">5-Day Forecast</h5>
+                            <div class="row">
+                                <div class="col">
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+       
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="script.js"></script>
+    
+    </body>
+    </html>
+
